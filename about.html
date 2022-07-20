@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+
+    <title>Codezie | Platform to learn New Technologies</title>
+    <style>
+        h1 {
+            font-family: 'Arvo', serif;
+        }
+
+        #logo {
+            font-family: 'Rubik Moonrocks', cursive;
+        }
+
+        #navbarSupportedContent {
+            font-family: 'Roboto Slab', serif;
+        }
+
+        h2 {
+            font-family: 'Roboto Slab', serif;
+            font-weight: bold;
+        }
+
+        #navbar {
+            background-color: rgb(16, 9, 37);
+        }
+
+        #section {
+            background-color: rgb(32 25 53);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark " id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" id="logo" href="/">Codezie</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Programming
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">C</a></li>
+                            <li><a class="dropdown-item" href="#">Java</a></li>
+                            <li><a class="dropdown-item" href="#">C++</a></li>
+                            <li><a class="dropdown-item" href="#">Python</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Web Technologies
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">CSS</a></li>
+                            <li><a class="dropdown-item" href="#">Javascript</a></li>
+                            <li><a class="dropdown-item" href="#">Node</a></li>
+                            <li><a class="dropdown-item" href="#">React</a></li>
+                            <li><a class="dropdown-item" href="#">Angular</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">SQL</a></li>
+                            <li><a class="dropdown-item" href="#">Mongo Db</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact us.html">Contact Us</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+                <div class="mx-2">
+                    <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Modal  -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login to Codezie</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Signup Modal  -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Get your Codezie Account !</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3 row">
+                        <label for="firstName" class="col-sm-2 col-form-label">First Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="firstName">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="lastName" class="col-sm-2 col-form-label">Last Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="lastName">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="name@example.com">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="inputPassword" class="col-sm-2 col-form-label">Create Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="inputPassword" class="col-sm-2 col-form-label">Confirm Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark">Create Account </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Above Section  -->
+    <div class="p-4 p-md-5 mb-4 text-white " id="section">
+        <div class="col-md-6 px-0">
+            <h1 class="display-4 fst-italic">Learn From the Best </h1>
+            <p class="lead my-3">Our Experts are well-trained and have an experience of more than 5+ years of coding and
+                software developing.</p>
+        </div>
+    </div>
+
+    <!-- Faculty  -->
+    <div class="container marketing my-5">
+        <div class="row">
+            <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="/inst1.png"
+                    alt="Instructor">
+
+                <h2>Robert Pattinson</h2>
+                <p>I'm Robert and I'm a developer with a passion for teaching. I'm the lead instructor at the Boston
+                    School, Boston's leading Programming Bootcamp. I've helped thousands of students learn to code and
+                    program and change their lives by becoming a developer. I've also been invited by companies such as
+                    Instagram, Facebook and Google to teach their employees.</p>
+                <p><a class="btn btn-info" href="#">View details »</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle" width="140" src="/inst2.png" alt="Instructor">
+
+                <h2>Chris Hemsworth</h2>
+                <p>I strted out at the age of 14 and then never stopped learning new programming skills and languages.
+                    Earlier I started creating websites for friends and just for fun as well. Besides web development I
+                    also explored Java and other web-developer tools. This passion has since lasted and lead to my
+                    decision of working as a tutor for web developement. </p>
+                <p><a class="btn btn-info" href="#">View details »</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle" width="140" src="/inst3.png" alt="Instructor">
+
+                <h2>Scarlett Johansson</h2>
+                <p>Scarlett Johansson has a BS and MS in Computer Science Engineering from oxford University and years
+                    of experience as a professional instructor and trainer for Java Developer, Machine Learning and
+                    Python Programming. She has publications and patents in various fields such as microfluidics,
+                    materials science, and data science. She has experience of developing of more than 10+ years.</p>
+                <p><a class="btn btn-info" href="#">View details »</a></p>
+            </div><!-- /.col-lg-4 -->
+        </div>
+    </div>
+
+
+    <!-- Footer  -->
+    <footer class="my-5 pt-5 text-muted text-center text-small ">
+        <p class="mb-1">© 2022 Codezie</p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Privacy</a></li>
+            <li class="list-inline-item"><a href="#">Terms</a></li>
+            <li class="list-inline-item"><a href="#">Support</a></li>
+        </ul>
+    </footer>
+    <!-- Optional JavaScript-->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

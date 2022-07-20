@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+
+    <title>Codezie | Platform to learn New Technologies</title>
+    <style>
+        h2 {
+            font-family: 'Arvo', serif;
+        }
+
+        #logo {
+            font-family: 'Rubik Moonrocks', cursive;
+        }
+
+        #navbarSupportedContent {
+            font-family: 'Roboto Slab', serif;
+        }
+
+        #navbar {
+            background-color: rgb(16, 9, 37);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark " id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" id="logo" href="/">Codezie</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Programming
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">C</a></li>
+                            <li><a class="dropdown-item" href="#">Java</a></li>
+                            <li><a class="dropdown-item" href="#">C++</a></li>
+                            <li><a class="dropdown-item" href="#">Python</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Web Technologies
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">CSS</a></li>
+                            <li><a class="dropdown-item" href="#">Javascript</a></li>
+                            <li><a class="dropdown-item" href="#">Node</a></li>
+                            <li><a class="dropdown-item" href="#">React</a></li>
+                            <li><a class="dropdown-item" href="#">Angular</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">SQL</a></li>
+                            <li><a class="dropdown-item" href="#">Mongo Db</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact us.html">Contact Us</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+                <div class="mx-2">
+                    <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Modal  -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login to Codezie</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Signup Modal  -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Get your Codezie Account !</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3 row">
+                        <label for="firstName" class="col-sm-2 col-form-label">First Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="firstName">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="lastName" class="col-sm-2 col-form-label">Last Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="lastName">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="name@example.com">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="inputPassword" class="col-sm-2 col-form-label">Create Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="inputPassword" class="col-sm-2 col-form-label">Confirm Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark">Create Account </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Carousel  -->
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Welcome to Codezie</h2>
+                    <p>Programming languages, Web Development, Application Development and many more .</p>
+                    <button type="button" class="btn btn-light">New Technology</button>
+                    <button type="button" class="btn btn-info">Web Designs</button>
+                    <button type="button" class="btn btn-dark">Tech Fun</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Enroll Now to learn!</h2>
+                    <p>Live classes, Recorded lectures, Notes and Guidance provided.</p>
+                    <button type="button" class="btn btn-light">New Technology</button>
+                    <button type="button" class="btn btn-info">Web Designs</button>
+                    <button type="button" class="btn btn-dark">Tech Fun</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>FREE courses available too!</h2>
+                    <p>Register now and start your first baby step in coding.</p>
+                    <button type="button" class="btn btn-light">New Technology</button>
+                    <button type="button" class="btn btn-info">Web Designs</button>
+                    <button type="button" class="btn btn-dark">Tech Fun</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Cards  -->
+    <div class="container my-5">
+        <h2>Start developing your skills now</h2>
+        <div class="album py-5 bg-light">
+            <div class="container">
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="/html.png" alt="HTML">
+
+                            <div class="card-body">
+                                <h4>HTML : Beginner To Advacnce</h4>
+                                <p class="card-text">Learn HTML and start your web development now.This course will
+                                    cover HTML Tags, HTML Elements using Attributes, etc. Build HTML pages with the use
+                                    of SEO.</p>
+
+                                <h1 class="card-title pricing-card-title">$13</h1>
+                                <div class="d-flex justify-content-between align-items-center mx-auto">
+                                    <div class="d-grid gap-2 col-6 mx-auto">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-dark .btn-lg">Enroll Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="/CSS.png" alt="CSS">
+
+                            <div class="card-body">
+                                <h4>The Complete Guide CSS : 2022</h4>
+                                <p class="card-text">Learn the use of Flexbox, Grid, Animations, Transitions and many
+                                    more. Build beautiful websites by using CSS. Use basic as well as advance features
+                                    too. No prior CSS knowledge required. </p>
+                                <h1 class="card-title pricing-card-title">$15</h1>
+                                <div class="d-flex justify-content-between align-items-center mx-auto">
+                                    <div class="d-grid gap-2 col-6 mx-auto">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-dark .btn-lg">Enroll Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="/js.png" alt="JS">
+
+                            <div class="card-body">
+                                <h4>The Javascipt Bootcamp 2022</h4>
+                                <p class="card-text">Learn from scratch! Get job ready with the advance understanding of
+                                    JS. 5 Projects included that will help you apply your knowledge in practical life .
+                                    Work with Node.js and Express.js.</p>
+                                <h1 class="card-title pricing-card-title">$18</h1>
+                                <div class="d-flex justify-content-between align-items-center mx-auto">
+                                    <div class="d-grid gap-2 col-6 mx-auto">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-dark .btn-lg">Enroll Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="/c++.jpg" alt="C++">
+
+                            <div class="card-body">
+                                <h4>Master the language : C++</h4>
+                                <p class="card-text">Understand the fundamentals and basics of the C++ programming
+                                    language. Create your own project using C++. Learn the concepts of OOPS. Learn
+                                    writing high-quality code.</p>
+                                <h1 class="card-title pricing-card-title">$18</h1>
+                                <div class="d-flex justify-content-between align-items-center mx-auto">
+                                    <div class="d-grid gap-2 col-6 mx-auto">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-dark .btn-lg">Enroll Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="/java.jpg" alt="Java">
+
+                            <div class="card-body">
+                                <h4>Java : The Complete Guide</h4>
+                                <p class="card-text">Learn to program and code in Java professionally. Grasps the
+                                    concept of Classes and Objects. Understand Testing and Test-Driven Development(TDD)
+                                    with JUnit.</p>
+                                <h1 class="card-title pricing-card-title">$18</h1>
+                                <div class="d-flex justify-content-between align-items-center mx-auto">
+                                    <div class="d-grid gap-2 col-6 mx-auto">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-dark .btn-lg">Enroll Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="/python.jpg" alt="Python">
+
+                            <div class="card-body">
+                                <h4>100 days of Python Development</h4>
+                                <p class="card-text">Understand how to use Jupyter Notebook system and creating GUIs.
+                                    Start coding professionally by learning both Python 2 and Python 3. You will build
+                                    games and a portfolio in this course.</p>
+                                <h1 class="card-title pricing-card-title">$18</h1>
+                                <div class="d-flex justify-content-between align-items-center mx-auto">
+                                    <div class="d-grid gap-2 col-6 mx-auto">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-dark .btn-lg">Enroll Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer  -->
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">© 2022 Codezie</p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Privacy</a></li>
+            <li class="list-inline-item"><a href="#">Terms</a></li>
+            <li class="list-inline-item"><a href="#">Support</a></li>
+        </ul>
+    </footer>
+    <!-- Optional JavaScript-->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
